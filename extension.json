@@ -1,51 +1,35 @@
 {
-  "id": "TinyMCE (v2)",
-  "name": "TinyMCE (v2)",
-  "src": "https://contentful.tiny.cloud/",
-  "fieldTypes": ["Text"],
+  "id": "my-first-extension",
+  "name": "my-first-extension",
+  "srcdoc": "https://renderbus.com/contentful-tinymce/index.html",
+  "fieldTypes": [
+    "Text"
+  ],
   "parameters": {
     "installation": [
       {
-        "id": "apiKey",
+        "id": "imagePath",
         "type": "Symbol",
-        "name": "TinyMCE Cloud API Key",
+        "name": "Image path",
         "description": "",
-        "required": false,
-        "default": "please-specify-your-key"
+        "required": true,
+        "default": "/opt/site-enable/contentful-images/"
       },
       {
-        "id": "channel",
+        "id": "imageLocation",
         "type": "Symbol",
-        "name": "TinyMCE Cloud 'channel' to use",
+        "name": "Image location",
         "description": "",
-        "required": false,
-        "default": "5"
-      }
-    ],
-    "instance": [
-      {
-          "id": "plugins",
-          "name": "Plugins",
-          "type": "Symbol",
-          "default": "autoresize textpattern lists advlist a11ychecker linkchecker media mediaembed powerpaste tinymcespellchecker advcode image",
-          "required": false,
-          "description": "Space separated list of TinyMCE plugins to enable. See https://www.tiny.cloud/docs/plugins/ for more information on plugins."
+        "required": true,
+        "default": "https://www.renderbus.com/contentful-upload-images/"
       },
       {
-          "id": "toolbar",
-          "name": "Toolbar",
-          "type": "Symbol",
-          "default": "undo redo | formatselect | bold italic | alignleft aligncenter alignright alignjustify | numlist bullist outdent intent | code",
-          "required": false,
-          "description": "Specify your toolbar configuration here. To use the default toolbar, clear this field. To hide the toolbar, enter the value 'false'. See https://www.tiny.cloud/docs/configure/editor-appearance/#"
-      },
-      {
-          "id": "menubar",
-          "name": "Menubar",
-          "type": "Symbol",
-          "default": "edit view insert format",
-          "required": false,
-          "description": "Specify the menus to display here. To use the default menu bar, clear this field. To hide the menu, enter the value 'false'. See https://www.tiny.cloud/docs/configure/editor-appearance/#menubar"
+        "id": "imageUploadApi",
+        "type": "Symbol",
+        "name": "Image upload API",
+        "description": "",
+        "required": true,
+        "default": "https://renderbus.com/contentful-images"
       }
     ]
   }
