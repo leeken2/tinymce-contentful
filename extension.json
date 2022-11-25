@@ -1,7 +1,7 @@
 {
   "id": "my-first-extension",
   "name": "my-first-extension",
-  "srcdoc": "https://renderbus.com/contentful-tinymce/index.html",
+  "src": "https://renderbus.com/contentful-tinymce/index.html",
   "fieldTypes": [
     "Text"
   ],
